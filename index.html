@@ -3,39 +3,454 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Davide Garassino — Game Designer</title>
-  <meta name="description" content="Davide Garassino, game designer and producer. New portfolio coming soon.">
-  <style>
-    :root { --bg: #0f1115; --fg: #e8e9ec; --muted: #9aa0aa; --accent: #7cf29c; }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; min-height: 100vh; display: grid; place-items: center;
-      background: var(--bg); color: var(--fg);
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      padding: 24px; text-align: center;
-    }
-    h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin: 0 0 .25em; letter-spacing: -.02em; }
-    p { color: var(--muted); margin: 0 0 1.5em; font-size: 1.1rem; }
-    .role { color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: .15em; font-size: .85rem; }
-    nav { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
-    a {
-      color: var(--fg); text-decoration: none; padding: 10px 18px;
-      border: 1px solid #2a2e36; border-radius: 8px;
-    }
-    a:hover { border-color: var(--accent); color: var(--accent); }
-  </style>
+  <title>Davide Garassino — Game Designer &amp; Producer</title>
+  <meta name="description" content="Portfolio of Davide Garassino, game designer and producer. Projects in Unity and Unreal Engine, design documentation, game jams and playtesting.">
+  <meta property="og:title" content="Davide Garassino — Game Designer & Producer">
+  <meta property="og:description" content="Game design, level and puzzle design, production. Projects, documentation and game jams.">
+  <meta property="og:image" content="https://davidegarassino.github.io/assets/img/profile.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0e0f12">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f1ba13'/%3E%3Ctext x='16' y='22' font-family='monospace' font-weight='700' font-size='15' text-anchor='middle' fill='%2314110a'%3EDG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Antic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <main>
-    <div class="role">Game Designer &amp; Producer</div>
-    <h1>Davide Garassino</h1>
-    <p>New portfolio coming soon.</p>
-    <nav>
-      <a href="https://davidegarassino.wordpress.com/">Current portfolio</a>
-      <a href="https://dada199.itch.io/">itch.io</a>
-      <a href="https://www.linkedin.com/in/davide-garassino-088a00276">LinkedIn</a>
-      <a href="mailto:garassino.davide@outlook.it">Email</a>
-    </nav>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="#top"><span class="logo-mark">DG</span>Davide Garassino</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#academic">Academic</a>
+        <a href="#jams">Jams</a>
+        <a href="#playtesting">Playtesting</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <div>
+          <p class="eyebrow">Game Designer &amp; Producer</p>
+          <h1>Davide<br><span>Garassino</span></h1>
+          <p class="lead">I design systems, levels and puzzles, and keep teams on schedule, so that players end up smiling.</p>
+          <div class="actions">
+            <a class="btn" href="#work">See my work</a>
+            <a class="btn ghost" href="#contact">Get in touch</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><strong>Unity · Unreal</strong><span>Engines</span></div>
+            <div class="stat"><strong>Steam · Meta</strong><span>Shipped on</span></div>
+            <div class="stat"><strong>4</strong><span>Game jams</span></div>
+          </div>
+        </div>
+        <div class="portrait">
+          <img src="assets/img/profile.jpg" alt="Portrait of Davide Garassino" width="700" height="933">
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="num">01 / about</span>
+          <h2>Gamer first, designer by trade</h2>
+        </div>
+        <div class="about-grid">
+          <div class="reveal">
+            <p>Video games have been my passion since childhood. I've played everything from Halo to Age of Empires II, Skyrim to Forza Motorsport, Diablo III to Dark Souls. Indie, AA or AAA, it doesn't matter: what matters is to play, understand, learn and, of course, have fun.</p>
+            <p>So I turned that passion into a job. After studying game design, I've worked on several projects in Unity and Unreal Engine with Italian studios, as a freelance designer and producer. With a group of friends, <strong>Bad Ideas Games</strong>, I also take part in game jams: they're fun, and one of the best ways to learn and improve.</p>
+            <p>I make games to see people having fun with them. The smile on a player's face after beating a challenge is what drives me, and what pays back every sacrifice made to build it.</p>
+          </div>
+          <aside class="skills reveal">
+            <h3>Roles</h3>
+            <ul>
+              <li class="tag accent">Game Design</li>
+              <li class="tag accent">Level Design</li>
+              <li class="tag accent">Puzzle Design</li>
+              <li class="tag accent">Production</li>
+              <li class="tag accent">QA &amp; Playtesting</li>
+            </ul>
+            <h3>Tools</h3>
+            <ul>
+              <li class="tag">Unreal Engine</li>
+              <li class="tag">Unity</li>
+              <li class="tag">GDD &amp; pitch docs</li>
+              <li class="tag">Milestones &amp; scheduling</li>
+              <li class="tag">Bug reporting</li>
+            </ul>
+            <h3>Languages</h3>
+            <ul>
+              <li class="tag">Italian</li>
+              <li class="tag">English</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional work -->
+    <section id="work">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="num">02 / work</span>
+          <h2>Professional projects</h2>
+          <p>What I've been working on over the past few years. Some of it is still under NDA.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal">
+            <div class="media">
+              <img src="assets/img/solprotocol.jpg" alt="Sol Protocol key art" loading="lazy">
+              <span class="badge">In development</span>
+            </div>
+            <div class="body">
+              <h3>Sol Protocol</h3>
+              <p class="role">Game Designer / Game Tester</p>
+              <blockquote>A high-intensity cooperative VR rogue-like in space, where every crew member plays a critical role: Pilot, Gunner or Captain.</blockquote>
+              <p>Involved from the very beginning: ideation, implementation and testing of all major gameplay systems. I designed the dungeons and helped build the structural framework of the procedurally generated universe. Documentation is under NDA.</p>
+              <dl class="facts">
+                <div><dt>Date</dt><dd>Sep 2025 – now</dd></div>
+                <div><dt>Engine</dt><dd>Unreal Engine</dd></div>
+                <div><dt>Platform</dt><dd>Meta Quest 3 / 3S, PC</dd></div>
+                <div><dt>Developer</dt><dd>Singular Perception</dd></div>
+              </dl>
+              <div class="links">
+                <a class="btn small" href="https://store.steampowered.com/app/4250370/Sol_Protocol/" target="_blank" rel="noopener">Steam</a>
+                <a class="btn small ghost" href="https://www.meta.com/en-gb/experiences/sol-protocol/10067260370018011/" target="_blank" rel="noopener">Meta Store</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="media">
+              <img src="assets/img/vsrage-cover.jpg" alt="V's Rage key art" loading="lazy">
+              <span class="badge">Released 2025</span>
+            </div>
+            <div class="body">
+              <h3>V's Rage</h3>
+              <p class="role">Producer, Designer, QA</p>
+              <blockquote>A parody action-adventure paying homage to '80s and '90s games and anime, with four gameplay types straight out of the arcades: beat-'em-up, runner, shoot-'em-all and side-scroller.</blockquote>
+              <p>I found and fixed flaws in the game design, hunted bugs and built the release schedule. I helped lay a solid foundation for all four level types and their mechanics, and improved combat and enemy behaviour. When the demo levels were complete, the team carried on from the guidelines we set together.</p>
+              <dl class="facts">
+                <div><dt>Date</dt><dd>Jul – Oct 2024</dd></div>
+                <div><dt>Engine</dt><dd>Unity</dd></div>
+                <div><dt>Platform</dt><dd>PC, Mac, Linux</dd></div>
+                <div><dt>Developer</dt><dd><a href="https://www.bitmaniax.com/NewbiX-Team.html" target="_blank" rel="noopener">NewBix</a></dd></div>
+              </dl>
+              <details class="docs">
+                <summary>Design documentation</summary>
+                <ul>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/V's%20Rage/V's%20Rage%20-%20GDD.pdf" target="_blank" rel="noopener">Game Design Document</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/V's%20Rage/V's%20Rage%20-%20Level%20design%20Level%201%20to%204.pdf" target="_blank" rel="noopener">Level design, levels 1–4</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/V's%20Rage/V's%20Rage%20-%20Enemies%20economy%20Level%201.pdf" target="_blank" rel="noopener">Enemies economy, level 1</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/V's%20Rage/V's%20Rage%20-%20%20Milestones.pdf" target="_blank" rel="noopener">Milestones</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/V's%20Rage/V's%20Rage%20-%20Bug%20report%20(to%20fix%20before%2022%20September%202024).pdf" target="_blank" rel="noopener">Bug report</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/V's%20Rage/V's%20Rage%20-%20Starting%20bug%20and%20issue%20report%20(IT).pdf" target="_blank" rel="noopener">Starting bug &amp; issue report (IT)</a></li>
+                </ul>
+              </details>
+              <div class="links">
+                <a class="btn small" href="https://store.steampowered.com/app/2167530/Vs_Rage/" target="_blank" rel="noopener">Steam</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="media classified">
+              <span>NDA<small>unannounced project</small></span>
+            </div>
+            <div class="body">
+              <h3>Deerwhere Studio</h3>
+              <p class="role">Game Designer</p>
+              <p>Freelance game designer for this Turin-based company which, after years of building websites as <a href="https://sanobusinessweb.com/" target="_blank" rel="noopener">Sano Business Web</a>, is taking its chance in game development. The project isn't public yet.</p>
+              <dl class="facts">
+                <div><dt>Date</dt><dd>May 2025 – now</dd></div>
+                <div><dt>Engine</dt><dd>Unreal Engine</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="media classified">
+              <span>NDA<small>unannounced project</small></span>
+            </div>
+            <div class="body">
+              <h3>Stealth Company</h3>
+              <p class="role">Producer</p>
+              <p>As a freelance producer I built the schedule and organised the work of a 40-person team to deliver a first internal prototype. The game will be announced at a later date.</p>
+              <dl class="facts">
+                <div><dt>Date</dt><dd>Jan – May 2025</dd></div>
+                <div><dt>Engine</dt><dd>Unity</dd></div>
+                <div><dt>Team</dt><dd>40 people</dd></div>
+              </dl>
+              <div class="links">
+                <a class="btn small ghost" href="https://www.stealthcompany.eu/" target="_blank" rel="noopener">Stealth Company</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic projects -->
+    <section id="academic">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="num">03 / academic</span>
+          <h2>Academic projects</h2>
+          <p>Made during my game design studies, each with its full design documentation.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal">
+            <div class="media">
+              <img src="assets/img/lasttide.jpg" alt="The Last Tide cover" loading="lazy">
+            </div>
+            <div class="body">
+              <h3>The Last Tide</h3>
+              <p class="role">Producer, Puzzle Designer</p>
+              <blockquote>A third-person puzzle adventure in an archipelago stuck in a time loop, home to an ancient civilisation cursed by a deity.</blockquote>
+              <p>The loop has four time slots that advance when the player rests at a bonfire or sails to another island. Players explore four islands, talk to NPCs and use artifacts to interact with the environment and solve puzzles, until they break the cycle and save everyone from final judgement.</p>
+              <dl class="facts">
+                <div><dt>Duration</dt><dd>6 months</dd></div>
+                <div><dt>Engine</dt><dd>Unreal Engine 5</dd></div>
+                <div><dt>Platform</dt><dd>PC</dd></div>
+                <div><dt>Constraint</dt><dd>Third person</dd></div>
+              </dl>
+              <details class="docs">
+                <summary>Design documentation</summary>
+                <ul>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/The_last_tide/The_last_tide%20-%20GDD.pdf" target="_blank" rel="noopener">Game Design Document</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/The_last_tide/The_last_tide%20-%20Pitch.pdf" target="_blank" rel="noopener">Pitch</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/The_last_tide/The_last_tide%20-%20Puzzles%20main%20document.pdf" target="_blank" rel="noopener">Puzzles main document</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/tree/main/The_last_tide/The_last_tide%20-%201st%20island%20puzzles%20presentations" target="_blank" rel="noopener">Puzzle presentations, island 1</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/tree/main/The_last_tide/The_last_tide%20-%202nd%20island%20puzzles%20presentations" target="_blank" rel="noopener">Puzzle presentations, island 2</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/tree/main/The_last_tide/The_last_tide%20-%203rd%20island%20puzzles%20presentations" target="_blank" rel="noopener">Puzzle presentations, island 3</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/tree/main/The_last_tide/The_last_tide%20-%204th%20island%20puzzles%20presentations" target="_blank" rel="noopener">Puzzle presentations, island 4</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/The_last_tide/The_last_tide%20-%20Milestones.pdf" target="_blank" rel="noopener">Milestones</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/The_last_tide/The_last_tide%20-%20Main_assets_list.pdf" target="_blank" rel="noopener">Main assets list</a></li>
+                </ul>
+              </details>
+              <div class="links">
+                <a class="btn small" href="https://digital-bros-game-academy.itch.io/the-last-tide" target="_blank" rel="noopener">Play on itch.io</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="media contain">
+              <img src="assets/img/hockey.png" alt="Hockey Shot shootout layout diagram" loading="lazy">
+            </div>
+            <div class="body">
+              <h3>Hockey Shot</h3>
+              <p class="role">Designer</p>
+              <blockquote>Slide on the rink and challenge other players in a high-stakes best-of-5 shootout.</blockquote>
+              <p>A hyper-casual mobile hockey game with fast matches built for online multiplayer. Players alternate between striker and goalkeeper, unlock characters inspired by famous hockey mascots through a season pass or in-game currency, and upgrade and customise them to climb the rankings.</p>
+              <dl class="facts">
+                <div><dt>Duration</dt><dd>2 months</dd></div>
+                <div><dt>Engine</dt><dd>Unity</dd></div>
+                <div><dt>Platform</dt><dd>Mobile</dd></div>
+                <div><dt>Constraint</dt><dd>Hyper-casual sports game</dd></div>
+              </dl>
+              <details class="docs">
+                <summary>Design documentation</summary>
+                <ul>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/Hockey-shoot/Hockey-Shot%20-%20GDD.pdf" target="_blank" rel="noopener">Game Design Document</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/Hockey-shoot/Hockey-Shot%20-%20Pitch.pdf" target="_blank" rel="noopener">Pitch</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/Hockey-shoot/Hockey-Shot%20-%20Level_presentation.pdf" target="_blank" rel="noopener">Level presentation</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/Hockey-shoot/Hockey-Shot%20-%20Live_ops_calendar.pdf" target="_blank" rel="noopener">Live ops calendar</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/Hockey-shoot/Hockey-Shot%20-%20Database.pdf" target="_blank" rel="noopener">Database</a></li>
+                </ul>
+              </details>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="media classified">
+              <span>LUTHIER<small>horror work simulator</small></span>
+            </div>
+            <div class="body">
+              <h3>Conventio Lutheri</h3>
+              <p class="role">Designer, Producer</p>
+              <blockquote>Goethe's Mephistopheles returns as an animated violin, to corrupt a luthier on the brink of despair and claim his soul.</blockquote>
+              <p>A first-person simulator of the luthier's craft with a horror twist on the pact with the devil. Repairs at the workbench test the player's skill; outside them, the game turns into a graphic adventure of clue gathering and story progression.</p>
+              <dl class="facts">
+                <div><dt>Duration</dt><dd>2 months</dd></div>
+                <div><dt>Engine</dt><dd>Unity</dd></div>
+                <div><dt>Platform</dt><dd>PC</dd></div>
+                <div><dt>Constraint</dt><dd>Work simulator + horror twist</dd></div>
+              </dl>
+              <details class="docs">
+                <summary>Design documentation</summary>
+                <ul>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/Convetio%20_lutheri/Conventio_lutheri%20-%20GDD.pdf" target="_blank" rel="noopener">Game Design Document</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/Convetio%20_lutheri/Conventio_lutheri%20-%20Pitch.pdf" target="_blank" rel="noopener">Pitch</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/Convetio%20_lutheri/Conventio_lutheri%20-%20Interactions_chart.pdf" target="_blank" rel="noopener">Interactions chart</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/Convetio%20_lutheri/Conventio_lutheri%20-%20Commands_and_tutorial.pdf" target="_blank" rel="noopener">Commands &amp; tutorial</a></li>
+                </ul>
+              </details>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="media">
+              <img src="assets/img/kapoong.jpg" alt="Ka-poong! cover art" loading="lazy">
+            </div>
+            <div class="body">
+              <h3>Ka-poong!</h3>
+              <p class="role">Designer</p>
+              <blockquote>Control robots in an explosive match: score more than your opponent before time runs out, but think twice before hitting the unstable energy sphere.</blockquote>
+              <p>A 2D two-player arcade game in space that breathes new life into 1971's Pong: the core mechanics stay, joined by a dynamic field, random abilities and a ball that might explode.</p>
+              <dl class="facts">
+                <div><dt>Duration</dt><dd>1 month</dd></div>
+                <div><dt>Engine</dt><dd>Unity</dd></div>
+                <div><dt>Platform</dt><dd>PC</dd></div>
+                <div><dt>Art</dt><dd>Sofia Zheng</dd></div>
+              </dl>
+              <details class="docs">
+                <summary>Design documentation</summary>
+                <ul>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/Ka-poong!/Ka-Poong!%20-%20GDD.pdf" target="_blank" rel="noopener">Game Design Document</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/Ka-poong!/Ka-Poong!%20-%20Pitch.pdf" target="_blank" rel="noopener">Pitch</a></li>
+                  <li><a href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation/blob/main/Ka-poong!/Ka-Poong!%20-%20Presentation%20Overwiev.pdf" target="_blank" rel="noopener">Presentation overview</a></li>
+                </ul>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game jams -->
+    <section id="jams">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="num">04 / game jams</span>
+          <h2>Game jams</h2>
+          <p>Made with Bad Ideas Games, mostly for fun, always to learn something new.</p>
+        </div>
+        <div class="grid">
+          <a class="card reveal" href="https://daniele-ferrari.itch.io/catch-me-if-you-cat" target="_blank" rel="noopener">
+            <div class="thumb"><img src="assets/img/jam-catch.png" alt="Catch me if you Cat cover" loading="lazy"></div>
+            <div class="content">
+              <span class="meta">The Weans Game Jam · Summer 2025</span>
+              <h3>Catch me if you Cat</h3>
+              <p>Colourful 4-player party game: catch fireflies as chameleons, or keep the map safe as the cat.</p>
+              <span class="more">Producer, Level &amp; Game Designer →</span>
+            </div>
+          </a>
+          <a class="card reveal" href="https://daniele-ferrari.itch.io/save-the-dungeon" target="_blank" rel="noopener">
+            <div class="thumb"><img src="assets/img/jam-dungeon.png" alt="Save the Dungeon cover" loading="lazy"></div>
+            <div class="content">
+              <span class="meta">Day Zero Games · Solarpunk Jam</span>
+              <h3>Save the Dungeon</h3>
+              <p>Restore the environment in this solarpunk turn-based roguelite RPG.</p>
+              <span class="more">Producer, Level &amp; Game Designer →</span>
+            </div>
+          </a>
+          <a class="card reveal" href="https://solzimer23.itch.io/the-gondoliers-fugue" target="_blank" rel="noopener">
+            <div class="thumb"><img src="assets/img/jam-gondolier.png" alt="The Gondolier's Fugue cover" loading="lazy"></div>
+            <div class="content">
+              <span class="meta">Spaghetti Invasion Game Jam 2025</span>
+              <h3>The Gondolier's Fugue</h3>
+              <p>A Lovecraftian horror set in Venice.</p>
+              <span class="more">Producer, Puzzle &amp; Level Designer →</span>
+            </div>
+          </a>
+          <a class="card reveal" href="https://daniele-ferrari.itch.io/drahive" target="_blank" rel="noopener">
+            <div class="thumb"><img src="assets/img/jam-drahive.png" alt="DrAHive cover" loading="lazy"></div>
+            <div class="content">
+              <span class="meta">Brackeys Game Jam 2025.1</span>
+              <h3>DrAHive</h3>
+              <p>A rage game that playfully tackles road safety.</p>
+              <span class="more">Game Designer →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Playtesting -->
+    <section id="playtesting">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="num">05 / playtesting</span>
+          <h2>Playtesting &amp; QA</h2>
+          <p>Closed alphas and betas: playing, reporting bugs and giving structured feedback to the teams.</p>
+        </div>
+        <div class="grid">
+          <div class="card reveal">
+            <div class="thumb"><img src="assets/img/pt-runequest.png" alt="RuneQuest: Warlords key art" loading="lazy"></div>
+            <div class="content">
+              <span class="meta">Jul – Sep 2025</span>
+              <h3>RuneQuest: Warlords</h3>
+              <p>Closed beta: played the game, reported bugs and issues, and filled in surveys with impressions and advice for the team.</p>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="thumb"><img src="assets/img/pt-carmageddon.png" alt="Carmageddon: Rogue Shift key art" loading="lazy"></div>
+            <div class="content">
+              <span class="meta">Apr, Jun &amp; Jul–Aug 2025</span>
+              <h3>Carmageddon: Rogue Shift</h3>
+              <p>Several alpha and beta playtest sessions: bug reports, surveys and feedback for the team.</p>
+            </div>
+          </div>
+          <a class="card reveal" href="https://www.youtube.com/shorts/xsfUMd5u_GA" target="_blank" rel="noopener">
+            <div class="thumb logo-bg"><img src="assets/img/pt-novis.png" alt="Novis Games logo" loading="lazy"></div>
+            <div class="content">
+              <span class="meta">March 2022</span>
+              <h3>Novis Games</h3>
+              <p>Tested games in an app for visually impaired players. I tested everything with my eyes closed to match real conditions, and was invited to appear in the company's trailer.</p>
+              <span class="more">Watch the trailer →</span>
+            </div>
+          </a>
+        </div>
+
+        <h3 class="sub-head">Thesis</h3>
+        <div class="thesis reveal">
+          <h3>The impact of video games (IT)</h3>
+          <p>My bachelor's thesis, in Italian, on video games as a medium: their history and economy, their psychological and social effects (flow, immersion, the Proteus effect, communities, eSports) and predatory monetisation practices.</p>
+          <a class="btn small ghost" href="https://davidegarassino.wordpress.com/wp-content/uploads/2024/06/impatto_videogiochi_garassino-2.pdf" target="_blank" rel="noopener">Read the thesis (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="num">06 / contact</span>
+          <h2>Let's make something <span>fun</span></h2>
+          <p>Open to game design and production roles, freelance or in-house.</p>
+        </div>
+        <div class="contact-grid reveal">
+          <a class="contact-item" href="mailto:garassino.davide@outlook.it"><small>Email</small><span>garassino.davide@outlook.it</span></a>
+          <a class="contact-item" href="https://www.linkedin.com/in/davide-garassino-088a00276" target="_blank" rel="noopener"><small>LinkedIn</small><span>Davide Garassino</span></a>
+          <a class="contact-item" href="https://github.com/DavideGarassino/DavideGarassino-portfolio-documentation" target="_blank" rel="noopener"><small>GitHub</small><span>Design documentation</span></a>
+          <a class="contact-item" href="https://dada199.itch.io/" target="_blank" rel="noopener"><small>itch.io</small><span>dada199</span></a>
+          <a class="contact-item" href="https://t.me/Dada1996" target="_blank" rel="noopener"><small>Telegram</small><span>@Dada1996</span></a>
+          <div class="contact-item"><small>Discord</small><span>nrg_dada199</span></div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Davide Garassino</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
