@@ -141,8 +141,6 @@ section + section { border-top: 1px solid var(--border); }
 .section-head .num { font-family: var(--mono); color: var(--accent); font-size: .95rem; display: block; margin-bottom: 8px; }
 .section-head h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 12px; }
 .section-head p { color: var(--muted); margin: 0; }
-.sub-head { font-family: var(--mono); font-size: 1.1rem; color: var(--muted); margin: 64px 0 24px; display: flex; align-items: center; gap: 16px; }
-.sub-head::after { content: ""; flex: 1; height: 1px; background: var(--border); }
 
 /* About */
 .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; }
@@ -205,11 +203,38 @@ details.docs ul { list-style: none; margin: 0; padding: 0 16px 14px; display: gr
 details.docs li a { color: var(--text); font-size: .95rem; display: inline-flex; gap: 8px; }
 details.docs li a::before { content: "↗"; color: var(--accent); font-family: var(--mono); }
 details.docs li a:hover { color: var(--accent); }
+.card details.docs summary { padding: 10px 14px; font-size: .85rem; }
+#academic .card details.info { margin-top: auto; }
+#academic .grid { align-items: start; }
+#academic .card .content > p:not(.card-role) { min-height: 6.6em; }
+.info-body { padding: 0 14px 14px; display: grid; gap: 10px; }
+.info-body p { font-size: .9rem; }
+.info-body strong { color: var(--text); font-weight: 400; font-family: var(--mono); }
+.info-body h4 { margin: 6px 0 0; padding-top: 12px; border-top: 1px solid var(--border); font-family: var(--mono); font-size: .8rem; color: var(--accent); font-weight: 400; }
+details.docs .info-body ul { padding: 0; }
 
 @media (max-width: 860px) {
   .projects { grid-template-columns: 1fr; }
   .body { padding: 24px; }
 }
+
+/* ---------- Playtest carousel ---------- */
+.car-track { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; padding: 4px 2px; }
+.car-track::-webkit-scrollbar { display: none; }
+.shot { flex: 0 0 230px; scroll-snap-align: start; display: flex; flex-direction: column; gap: 10px; color: inherit; }
+.shot:hover { text-decoration: none; }
+.shot .thumb { aspect-ratio: 315 / 250; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--surface-2); transition: border-color .2s, transform .2s; }
+.shot:hover .thumb, .shot:focus-visible .thumb { border-color: var(--accent); transform: translateY(-3px); }
+.shot .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.shot .thumb.logo-bg { background: #fff; display: grid; place-items: center; padding: 20px; }
+.shot .thumb.logo-bg img { object-fit: contain; height: auto; max-height: 100%; }
+.shot .meta { font-family: var(--mono); font-size: .8rem; color: var(--text); font-style: italic; }
+.car-nav { display: flex; justify-content: flex-end; gap: 8px; margin-top: 12px; }
+.carousel.fits .car-nav { display: none; }
+.car-btn { width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-family: var(--mono); cursor: pointer; }
+.car-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.car-btn:disabled { opacity: .35; cursor: default; }
+@media (max-width: 640px) { .shot { flex-basis: 70%; } }
 
 /* ---------- Small cards (jams, playtests) ---------- */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
@@ -225,17 +250,21 @@ a.card:hover { text-decoration: none; transform: translateY(-4px); border-color:
 .card .thumb.logo-bg img { object-fit: contain; height: auto; max-height: 100%; }
 .card .content { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
 .card h3 { font-size: 1.15rem; }
-.card .meta { font-family: var(--mono); font-size: .8rem; color: var(--accent); }
+.card .meta { font-family: var(--mono); font-size: .8rem; color: var(--text); font-style: italic; }
 .card p { color: var(--muted); font-size: .95rem; margin: 0; }
 .card .thumb { display: block; }
+.card .doc-links { margin-top: auto; display: flex; gap: 16px; font-family: var(--mono); font-size: .85rem; }
+.card .doc-links a { color: var(--text); }
+.card .doc-links a::after { content: " ↗"; color: var(--accent); }
+.card .doc-links a:hover { color: var(--accent); text-decoration: none; }
 .card h3 a { color: inherit; }
 .card h3 a:hover { color: var(--accent); text-decoration: none; }
+.card-foot { margin-top: auto; padding-top: 8px; min-height: 2.2em; }
+.card .doc-links + .card-foot, #academic details.info + .card-foot { margin-top: 0; }
+.card .card-role { font-family: var(--mono); font-size: .9rem; color: var(--accent); margin: -4px 0 0; }
+.card .card-foot .more { margin-top: 0; padding-top: 0; }
 .card .more { margin-top: auto; padding-top: 8px; font-family: var(--mono); font-size: .85rem; color: var(--accent); }
 
-/* Thesis */
-.thesis { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius); padding: 28px; }
-.thesis h3 { font-size: 1.2rem; margin-bottom: 10px; }
-.thesis p { color: var(--muted); }
 
 /* ---------- Contact ---------- */
 .contact { text-align: center; }
