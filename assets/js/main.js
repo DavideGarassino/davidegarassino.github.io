@@ -46,4 +46,21 @@ document.querySelectorAll('.carousel').forEach(car => {
   update();
 });
 
+// Cards with several images: cross-fade them while the card is on screen
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('.fader').forEach(box => {
+    const imgs = [...box.children];
+    let i = 0, timer = null;
+    const tick = () => {
+      imgs[i].classList.remove('on');
+      i = (i + 1) % imgs.length;
+      imgs[i].classList.add('on');
+    };
+    new IntersectionObserver(([e]) => {
+      clearInterval(timer);
+      if (e.isIntersecting) timer = setInterval(tick, 2500);
+    }).observe(box);
+  });
+}
+
 document.getElementById('year').textContent = new Date().getFullYear();
